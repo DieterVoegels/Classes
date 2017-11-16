@@ -158,24 +158,24 @@ void titleSearch(vector<media*> &vect){
     //if it matches then find out which media it is then print out the media's information
     if(strcmp((*it)->getTitle(),input) == 0){
       if((*it)->getType() == 0){
-	cout << "Title:" + (*it)->getTitle() << endl;
-	cout << "Year:" + (*it)->getYear() << endl;
-	cout << "Publisher:" + (*it)->getPublisher() << endl;
-	cout << "Rating:" + (*it)->getRating() << endl;
+	cout << "Title:" << (*it)->getTitle() << endl;
+	cout << "Year:" << (*it)->getYear() << endl;
+	cout << "Publisher:" << (*it)->getPublisher() << endl;
+	cout << "Rating:" << (*it)->getRating() << endl;
       }
       if((*it)->getType() == 1){
-	cout << "Title:" + (*it)->getTitle() << endl;
-	cout << "Year:" + (*it)->getYear() << endl;
-	cout << "Director:" + (*it)->getDirector() << endl;
-	cout << "Duration:" + (*it)->getDuration()<< endl;
-	cout << "Rating:" + (*it)->getRating() << endl;
+	cout << "Title:" << (*it)->getTitle() << endl;
+	cout << "Year:" << (*it)->getYear() << endl;
+	cout << "Director:" << (*it)->getDirector() << endl;
+	cout << "Duration:" << (*it)->getDuration()<< endl;
+	cout << "Rating:" << (*it)->getRating() << endl;
       }
       if((*it)->getType() == 2){
-	cout << "Title:" + (*it)->getTitle() << endl;
-	cout << "Year:" + (*it)->getYear() << endl;
-	cout << "Publisher:" + (*it)->getPublisher() << endl;
-	cout << "Artist:" + (*it)->getArtist()<< endl;
-	cout << "Duration:" + (*it)->getDuration() << endl;
+	cout << "Title:" << (*it)->getTitle() << endl;
+	cout << "Year:" << (*it)->getYear() << endl;
+	cout << "Publisher:" << (*it)->getPublisher() << endl;
+	cout << "Artist:" << (*it)->getArtist()<< endl;
+	cout << "Duration:" << (*it)->getDuration() << endl;
       }
     }
   }
