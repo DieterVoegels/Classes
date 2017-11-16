@@ -192,10 +192,26 @@ void yearSearch(vector<media*> &vect){
   for(vector<media*>::iterator it = vect.begin(); it != vect.end(); it++){
     //if the year matches the year of a class then get the type of media and print out it's information
     if((*it)->getYear() == input){
-      cout << (*it)->getTitle() << endl;
-      cout << (*it)->getYear() << endl;
-      cout << (*it)->getPublisher() << endl;
-      cout << (*it)->getRating() << endl;
+      if((*it)->getType() == 0){
+	cout << "Title:" << (*it)->getTitle() << endl;
+	cout << "Year:" << (*it)->getYear() << endl;
+	cout << "Publisher:" << (*it)->getPublisher() << endl;
+	cout << "Rating:" << (*it)->getRating() << endl;
+      }
+      if((*it)->getType() == 1){
+	cout << "Title:" << (*it)->getTitle() << endl;
+	cout << "Year:" << (*it)->getYear() << endl;
+	cout << "Director:" << (*it)->getDirector() << endl;
+	cout << "Duration:" << (*it)->getDuration()<< endl;
+	cout << "Rating:" << (*it)->getRating() << endl;
+      }
+      if((*it)->getType() == 2){
+	cout << "Title:" << (*it)->getTitle() << endl;
+	cout << "Year:" << (*it)->getYear() << endl;
+	cout << "Publisher:" << (*it)->getPublisher() << endl;
+	cout << "Artist:" << (*it)->getArtist()<< endl;
+	cout << "Duration:" << (*it)->getDuration() << endl;
+      }
     }
   }
 }
